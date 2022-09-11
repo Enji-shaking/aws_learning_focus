@@ -66,6 +66,7 @@ function App() {
         <button>Create pet</button>
       </form>
       <main>
+        current pet lists:
         <ul>
           {
             petsData.map((pet) => (
@@ -79,6 +80,8 @@ function App() {
             ))
           }
         </ul>
+        click the pet to delete it from the database
+        (you can refresh to verify it's not there)
       </main>
     </div>
   );
