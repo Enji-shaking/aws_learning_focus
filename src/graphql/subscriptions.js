@@ -1,41 +1,4139 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreatePet = /* GraphQL */ `
-  subscription OnCreatePet($owner: String) {
-    onCreatePet(owner: $owner) {
+export const onCreateMarketActor = /* GraphQL */ `
+  subscription OnCreateMarketActor($owner: String) {
+    onCreateMarketActor(owner: $owner) {
       id
       name
-      description
-      petType
+      aboutText
+      websiteLink
+      region
+      actorType
+      followees {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      following {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      game
+      captain {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      admin {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      organization {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      players {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      coach {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      isOpenToOffers
+      owner {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      teams {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      Posts {
+        items {
+          id
+          title
+          content
+          createdAt
+          updatedAt
+          marketActorPostsId
+          dealPostsId
+          postOwnerId
+        }
+        nextToken
+      }
       createdAt
       updatedAt
+      marketActorFolloweesId
+      marketActorFollowingId
+      marketActorAdminId
+      marketActorPlayersId
+      marketActorTeamsId
+      postLikesId
+      marketActorCaptainId
+      marketActorOrganizationId
+      marketActorCoachId
+      marketActorOwnerId
+    }
+  }
+`;
+export const onUpdateMarketActor = /* GraphQL */ `
+  subscription OnUpdateMarketActor($owner: String) {
+    onUpdateMarketActor(owner: $owner) {
+      id
+      name
+      aboutText
+      websiteLink
+      region
+      actorType
+      followees {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      following {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      game
+      captain {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      admin {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      organization {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      players {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      coach {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      isOpenToOffers
+      owner {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      teams {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      Posts {
+        items {
+          id
+          title
+          content
+          createdAt
+          updatedAt
+          marketActorPostsId
+          dealPostsId
+          postOwnerId
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+      marketActorFolloweesId
+      marketActorFollowingId
+      marketActorAdminId
+      marketActorPlayersId
+      marketActorTeamsId
+      postLikesId
+      marketActorCaptainId
+      marketActorOrganizationId
+      marketActorCoachId
+      marketActorOwnerId
+    }
+  }
+`;
+export const onDeleteMarketActor = /* GraphQL */ `
+  subscription OnDeleteMarketActor($owner: String) {
+    onDeleteMarketActor(owner: $owner) {
+      id
+      name
+      aboutText
+      websiteLink
+      region
+      actorType
+      followees {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      following {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      game
+      captain {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      admin {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      organization {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      players {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      coach {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      isOpenToOffers
+      owner {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      teams {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      Posts {
+        items {
+          id
+          title
+          content
+          createdAt
+          updatedAt
+          marketActorPostsId
+          dealPostsId
+          postOwnerId
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+      marketActorFolloweesId
+      marketActorFollowingId
+      marketActorAdminId
+      marketActorPlayersId
+      marketActorTeamsId
+      postLikesId
+      marketActorCaptainId
+      marketActorOrganizationId
+      marketActorCoachId
+      marketActorOwnerId
+    }
+  }
+`;
+export const onCreatePost = /* GraphQL */ `
+  subscription OnCreatePost($owner: String) {
+    onCreatePost(owner: $owner) {
+      id
+      title
+      content
+      comments {
+        items {
+          id
+          content
+          createdAt
+          updatedAt
+          postCommentsId
+          commentOwnerId
+        }
+        nextToken
+      }
+      likes {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      owner {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      Deal {
+        id
+        status
+        sponsee {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        sponser {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        dealSponseeId
+        dealSponserId
+        owner
+      }
+      createdAt
+      updatedAt
+      marketActorPostsId
+      dealPostsId
+      postOwnerId
+    }
+  }
+`;
+export const onUpdatePost = /* GraphQL */ `
+  subscription OnUpdatePost($owner: String) {
+    onUpdatePost(owner: $owner) {
+      id
+      title
+      content
+      comments {
+        items {
+          id
+          content
+          createdAt
+          updatedAt
+          postCommentsId
+          commentOwnerId
+        }
+        nextToken
+      }
+      likes {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      owner {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      Deal {
+        id
+        status
+        sponsee {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        sponser {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        dealSponseeId
+        dealSponserId
+        owner
+      }
+      createdAt
+      updatedAt
+      marketActorPostsId
+      dealPostsId
+      postOwnerId
+    }
+  }
+`;
+export const onDeletePost = /* GraphQL */ `
+  subscription OnDeletePost($owner: String) {
+    onDeletePost(owner: $owner) {
+      id
+      title
+      content
+      comments {
+        items {
+          id
+          content
+          createdAt
+          updatedAt
+          postCommentsId
+          commentOwnerId
+        }
+        nextToken
+      }
+      likes {
+        items {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        nextToken
+      }
+      owner {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      Deal {
+        id
+        status
+        sponsee {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        sponser {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        dealSponseeId
+        dealSponserId
+        owner
+      }
+      createdAt
+      updatedAt
+      marketActorPostsId
+      dealPostsId
+      postOwnerId
+    }
+  }
+`;
+export const onCreateComment = /* GraphQL */ `
+  subscription OnCreateComment($owner: String) {
+    onCreateComment(owner: $owner) {
+      id
+      post {
+        id
+        title
+        content
+        comments {
+          nextToken
+        }
+        likes {
+          nextToken
+        }
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        Deal {
+          id
+          status
+          createdAt
+          updatedAt
+          dealSponseeId
+          dealSponserId
+          owner
+        }
+        createdAt
+        updatedAt
+        marketActorPostsId
+        dealPostsId
+        postOwnerId
+      }
+      content
+      owner {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      createdAt
+      updatedAt
+      postCommentsId
+      commentOwnerId
+    }
+  }
+`;
+export const onUpdateComment = /* GraphQL */ `
+  subscription OnUpdateComment($owner: String) {
+    onUpdateComment(owner: $owner) {
+      id
+      post {
+        id
+        title
+        content
+        comments {
+          nextToken
+        }
+        likes {
+          nextToken
+        }
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        Deal {
+          id
+          status
+          createdAt
+          updatedAt
+          dealSponseeId
+          dealSponserId
+          owner
+        }
+        createdAt
+        updatedAt
+        marketActorPostsId
+        dealPostsId
+        postOwnerId
+      }
+      content
+      owner {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      createdAt
+      updatedAt
+      postCommentsId
+      commentOwnerId
+    }
+  }
+`;
+export const onDeleteComment = /* GraphQL */ `
+  subscription OnDeleteComment($owner: String) {
+    onDeleteComment(owner: $owner) {
+      id
+      post {
+        id
+        title
+        content
+        comments {
+          nextToken
+        }
+        likes {
+          nextToken
+        }
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        Deal {
+          id
+          status
+          createdAt
+          updatedAt
+          dealSponseeId
+          dealSponserId
+          owner
+        }
+        createdAt
+        updatedAt
+        marketActorPostsId
+        dealPostsId
+        postOwnerId
+      }
+      content
+      owner {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      createdAt
+      updatedAt
+      postCommentsId
+      commentOwnerId
+    }
+  }
+`;
+export const onCreateDeal = /* GraphQL */ `
+  subscription OnCreateDeal($owner: String) {
+    onCreateDeal(owner: $owner) {
+      id
+      status
+      sponsee {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      sponser {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      posts {
+        items {
+          id
+          title
+          content
+          createdAt
+          updatedAt
+          marketActorPostsId
+          dealPostsId
+          postOwnerId
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+      dealSponseeId
+      dealSponserId
       owner
     }
   }
 `;
-export const onUpdatePet = /* GraphQL */ `
-  subscription OnUpdatePet($owner: String) {
-    onUpdatePet(owner: $owner) {
+export const onUpdateDeal = /* GraphQL */ `
+  subscription OnUpdateDeal($owner: String) {
+    onUpdateDeal(owner: $owner) {
       id
-      name
-      description
-      petType
+      status
+      sponsee {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      sponser {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      posts {
+        items {
+          id
+          title
+          content
+          createdAt
+          updatedAt
+          marketActorPostsId
+          dealPostsId
+          postOwnerId
+        }
+        nextToken
+      }
       createdAt
       updatedAt
+      dealSponseeId
+      dealSponserId
       owner
     }
   }
 `;
-export const onDeletePet = /* GraphQL */ `
-  subscription OnDeletePet($owner: String) {
-    onDeletePet(owner: $owner) {
+export const onDeleteDeal = /* GraphQL */ `
+  subscription OnDeleteDeal($owner: String) {
+    onDeleteDeal(owner: $owner) {
       id
-      name
-      description
-      petType
+      status
+      sponsee {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      sponser {
+        id
+        name
+        aboutText
+        websiteLink
+        region
+        actorType
+        followees {
+          nextToken
+        }
+        following {
+          nextToken
+        }
+        game
+        captain {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        admin {
+          nextToken
+        }
+        organization {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        players {
+          nextToken
+        }
+        coach {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        isOpenToOffers
+        owner {
+          id
+          name
+          aboutText
+          websiteLink
+          region
+          actorType
+          game
+          isOpenToOffers
+          createdAt
+          updatedAt
+          marketActorFolloweesId
+          marketActorFollowingId
+          marketActorAdminId
+          marketActorPlayersId
+          marketActorTeamsId
+          postLikesId
+          marketActorCaptainId
+          marketActorOrganizationId
+          marketActorCoachId
+          marketActorOwnerId
+        }
+        teams {
+          nextToken
+        }
+        Posts {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        marketActorFolloweesId
+        marketActorFollowingId
+        marketActorAdminId
+        marketActorPlayersId
+        marketActorTeamsId
+        postLikesId
+        marketActorCaptainId
+        marketActorOrganizationId
+        marketActorCoachId
+        marketActorOwnerId
+      }
+      posts {
+        items {
+          id
+          title
+          content
+          createdAt
+          updatedAt
+          marketActorPostsId
+          dealPostsId
+          postOwnerId
+        }
+        nextToken
+      }
       createdAt
       updatedAt
+      dealSponseeId
+      dealSponserId
       owner
     }
   }

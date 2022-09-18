@@ -1,17 +1,80 @@
 # This "input" configures a global authorization rule to enable public access to
 # all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
 # input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
-
-type Pet @model @auth(rules: [{allow: owner }]) {
+enum MarketActorType{
+  User
+  Team
+  Organization
+}
+type MarketActor @model @auth(rules: [{ allow: owner, operations: [create,delete, update, read] }]) {
+	# For All Market Actor
   id: ID!
-  name: String!
-  description: String
-  petType: petEnum!
+	name: String!
+  # ProfilePicture: do later
+  # BigProfilePicture: do later
+  # BannerPicture: do later
+  aboutText: String!
+  websiteLink: String
+  # SocialMediaStatistics: do later
+  # SocialMediaLink: do later
+  # CertificationRatings: do later
+  region: String!
+  actorType: MarketActorType!
+  followees: [MarketActor] @hasMany
+
+  # For User
+  following: [MarketActor] @hasMany
+
+  # For team
+  game: String!
+	captain: MarketActor @hasOne
+  admin: [MarketActor] @hasMany
+	organization: MarketActor @hasOne
+  players: [MarketActor] @hasMany
+	coach: MarketActor @hasOne
+
+  # For organization
+  isOpenToOffers: Boolean!
+	owner: MarketActor @hasOne
+  # Admin: MarketActor @hasMany
+  teams: [MarketActor] @hasMany
+  Posts: [Post] @hasMany
 }
 
-enum petEnum {
-  DOG
-  CAT
-  BIRD
-  OTHER
+
+
+type Post @model @auth(rules: [{ allow: owner, operations: [create,delete, update, read] }]) {
+	id: ID!
+	title: String!
+  content: String!
+	comments: [Comment] @hasMany
+	likes: [MarketActor] @hasMany
+	owner: MarketActor @hasOne
+  Deal: Deal! @belongsTo
 }
+
+type Comment @model @auth(rules: [{ allow: owner, operations: [create,delete, update, read] }]) {
+	id: ID!
+	post: Post @belongsTo
+  content: String!
+	owner: MarketActor @hasOne
+}
+
+enum DealStatus{
+  Proposed
+  InProgress
+  Completed
+}
+
+type Deal @model @auth(rules: [{ allow: owner, operations: [create,delete, update, read] }]) {
+	id: ID!
+  status: DealStatus!
+	sponsee: MarketActor! @hasOne
+	sponser: MarketActor! @hasOne
+  # Terms
+  posts: [Post]! @hasMany
+}
+
+
+
+
